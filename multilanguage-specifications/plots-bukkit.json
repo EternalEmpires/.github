@@ -1,0 +1,83 @@
+[
+  {
+    "key": "plots.message.plot.help",
+    "description": "Help message for the plot command",
+    "default": [
+      "Plot commands",
+      "/plot - show this message",
+      "/plot claim - claim a plot",
+      "/plot info - show info about the plot you're standing on",
+      "/plot kick <player> - kick a player from your plot",
+      "/plot list - list all plots you have access to",
+      "/plot sell - sells your plot to the server",
+      "/plot setowner <player> - sets the owner of your plot",
+      "/plot trust <player> - trust a player with your plot",
+      "/plot untrust <player> - untrust a player from your plot",
+      "/plot deny <player> - deny a player access to your plot",
+      "/plot undeny <player> - remove a player from your plot's deny list"
+    ]
+  },
+  {
+    "key": "plots.message.plot.no-plot",
+    "description": "Message when a player is not standing on a plot",
+    "default": "You are not standing on a plot"
+  },
+  {
+    "key": "plots.message.plot.not-owned",
+    "description": "Message when a player is not the owner of a plot",
+    "default": "You are not the owner of this plot"
+  },
+  {
+    "key": "plots.message.plot.claim.already-owned",
+    "description": "Message when a player tries to claim a plot that is already owned",
+    "default": "This plot is already owned by {owner}",
+    "placeholders": [
+      {
+        "key": "owner",
+        "description": "The player who owns the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.claim.not-enough-money",
+    "description": "Message when a player tries to claim a plot but doesn't have enough money",
+    "default": "You don't have enough money to buy this plot",
+    "placeholders": [
+      {
+        "key": "price",
+        "description": "The price of the plot",
+        "example": "$1000"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.claim.confirm",
+    "description": "Message that the player must confirm to claim a plot",
+    "default": "Are you sure you want to buy this plot for {price}? Type /plot claim confirm to confirm",
+    "placeholders": [
+      {
+        "key": "price",
+        "description": "The price of the plot",
+        "example": "$1000"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.claim.confirm.no-request",
+    "description": "Message when a player tries to confirm a plot claim but hasn't requested to claim a plot",
+    "default": "You haven't requested to claim a plot"
+  },
+  {
+    "key": "plots.message.plot.claim.success",
+    "description": "Message when a player successfully claims a plot",
+    "default": "You have successfully claimed this plot for {price}",
+    "placeholders": [
+      {
+        "key": "price",
+        "description": "The price of the plot",
+        "example": "$1000"
+      }
+    ]
+  }
+]
