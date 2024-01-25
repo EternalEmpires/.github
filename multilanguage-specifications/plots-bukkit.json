@@ -69,7 +69,7 @@
     "default": "You haven't requested to claim a plot"
   },
   {
-    "key": "plots.message.plot.claim.success",
+    "key": "plots.message.plot.claim.succeed",
     "description": "Message when a player successfully claims a plot",
     "default": "You have successfully claimed this plot for {price}",
     "placeholders": [
