@@ -79,5 +79,46 @@
         "example": "$1000"
       }
     ]
+  },
+  {
+    "key": "plots.message.plot.deny.self",
+    "description": "Message when a player tries to deny themselves from a plot",
+    "default": "You can't deny yourself from your own plot"
+  },
+  {
+    "key": "plots.message.plot.deny.already-denied",
+    "description": "Message when a player tries to deny a player from a plot that they are already denied from",
+    "default": "{player} is already denied from this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is denied from the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.deny.succeed",
+    "description": "Message when a player successfully denies a player from a plot",
+    "default": "You have denied {player} from this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is denied from the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.deny.denied",
+    "description": "Message to send to a player when they are denied from a plot",
+    "default": "You have been denied from {owner}'s plot",
+    "placeholders": [
+      {
+        "key": "owner",
+        "description": "The owner of the plot",
+        "example": "Steve"
+      }
+    ]
   }
 ]
