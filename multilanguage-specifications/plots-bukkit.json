@@ -5,7 +5,7 @@
     "default": [
       "Plot commands",
       "/plot - show this message",
-      "/plot claim - claim a plot",
+      "/plot buy - buy a plot",
       "/plot info - show info about the plot you're standing on",
       "/plot kick <player> - kick a player from your plot",
       "/plot list - list all plots you have access to",
@@ -24,12 +24,17 @@
   },
   {
     "key": "plots.message.plot.not-owned",
+    "description": "Message when the plot is not owned by a player",
+    "default": "This plot is not owned by a player"
+  },
+  {
+    "key": "plots.message.plot.not-owned.self",
     "description": "Message when a player is not the owner of a plot",
     "default": "You are not the owner of this plot"
   },
   {
-    "key": "plots.message.plot.claim.already-owned",
-    "description": "Message when a player tries to claim a plot that is already owned",
+    "key": "plots.message.plot.buy.already-owned",
+    "description": "Message when a player tries to buy a plot that is already owned",
     "default": "This plot is already owned by {owner}",
     "placeholders": [
       {
@@ -40,8 +45,8 @@
     ]
   },
   {
-    "key": "plots.message.plot.claim.not-enough-money",
-    "description": "Message when a player tries to claim a plot but doesn't have enough money",
+    "key": "plots.message.plot.buy.not-enough-money",
+    "description": "Message when a player tries to buy a plot but doesn't have enough money",
     "default": "You don't have enough money to buy this plot",
     "placeholders": [
       {
@@ -52,9 +57,9 @@
     ]
   },
   {
-    "key": "plots.message.plot.claim.confirm",
-    "description": "Message that the player must confirm to claim a plot",
-    "default": "Are you sure you want to buy this plot for {price}? Type /plot claim confirm to confirm",
+    "key": "plots.message.plot.buy.confirm",
+    "description": "Message that the player must confirm to buy a plot",
+    "default": "Are you sure you want to buy this plot for {price}? Type /plot buy confirm to confirm",
     "placeholders": [
       {
         "key": "price",
@@ -64,14 +69,14 @@
     ]
   },
   {
-    "key": "plots.message.plot.claim.confirm.no-request",
-    "description": "Message when a player tries to confirm a plot claim but hasn't requested to claim a plot",
-    "default": "You haven't requested to claim a plot"
+    "key": "plots.message.plot.buy.confirm.no-request",
+    "description": "Message when a player tries to confirm a plot buy but hasn't requested to buy a plot",
+    "default": "You haven't requested to buy a plot"
   },
   {
-    "key": "plots.message.plot.claim.succeed",
-    "description": "Message when a player successfully claims a plot",
-    "default": "You have successfully claimed this plot for {price}",
+    "key": "plots.message.plot.buy.succeed",
+    "description": "Message when a player successfully buys a plot",
+    "default": "You have successfully bought this plot for {price}",
     "placeholders": [
       {
         "key": "price",
@@ -79,6 +84,11 @@
         "example": "$1000"
       }
     ]
+  },
+  {
+    "key": "plots.message.plot.confirm.no-confirmation",
+    "description": "Message when a player tries to confirm an action but hasn't requested something that requires confirmation",
+    "default": "You haven't requested to confirm"
   },
   {
     "key": "plots.message.plot.deny.self",
@@ -118,6 +128,124 @@
         "key": "owner",
         "description": "The owner of the plot",
         "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plot.message.plot.info",
+    "description": "Message to show info about a plot",
+    "default": [
+      "Plot info",
+      "Owner: {owner}",
+      "Price: {price}",
+      "Trusted: {trusted}",
+      "Denied: {denied}"
+    ],
+    "placeholders": [
+      {
+        "key": "owner",
+        "description": "The owner of the plot",
+        "example": "Steve"
+      },
+      {
+        "key": "price",
+        "description": "The price of the plot",
+        "example": "$1000"
+      },
+      {
+        "key": "trusted",
+        "description": "The players who are trusted on the plot",
+        "example": "Steve, Alex"
+      },
+      {
+        "key": "denied",
+        "description": "The players who are denied from the plot",
+        "example": "Steve, Alex"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.kick.self",
+    "description": "Message when a player tries to kick themselves from a plot",
+    "default": "You can't kick yourself from your own plot"
+  },
+  {
+    "key": "plots.message.plot.kick.player-not-on-plot",
+    "description": "Message when a player tries to kick a player from a plot that they are not on",
+    "default": "{player} is not on this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is not on the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.kick.succeed",
+    "description": "Message when a player successfully kicks a player from a plot",
+    "default": "You have kicked {player} from this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is kicked from the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.kick.kicked",
+    "description": "Message to send to a player when they are kicked from a plot",
+    "default": "You have been kicked from {owner}'s plot",
+    "placeholders": [
+      {
+        "key": "owner",
+        "description": "The owner of the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.list.header",
+    "description": "Header for the plot list",
+    "default": "You have {owned.amount} plots",
+    "placeholders": [
+      {
+        "key": "owned.amount",
+        "description": "The amount of plots the player owns",
+        "example": "5"
+      },
+      {
+        "key": "trusted.amount",
+        "description": "The amount of plots the player is trusted on",
+        "example": "5"
+      },
+      {
+        "key": "denied.amount",
+        "description": "The amount of plots the player is denied from",
+        "example": "5"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.list.footer",
+    "description": "Footer for the plot list",
+    "default": "Plots",
+    "placeholders": [
+      {
+        "key": "owned.amount",
+        "description": "The amount of plots the player owns",
+        "example": "5"
+      },
+      {
+        "key": "trusted.amount",
+        "description": "The amount of plots the player is trusted on",
+        "example": "5"
+      },
+      {
+        "key": "denied.amount",
+        "description": "The amount of plots the player is denied from",
+        "example": "5"
       }
     ]
   }
