@@ -248,5 +248,78 @@
         "example": "5"
       }
     ]
+  },
+  {
+    "key": "plots.message.plot.list.title.owned",
+    "description": "Title for the owned plots section of the plot list",
+    "default": "Owned plots ({amount}):",
+    "placeholders": [
+      {
+        "key": "amount",
+        "description": "The amount of plots the player owns",
+        "example": "5"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.list.plot",
+    "description": "Message to show a plot that is owned b the player in the plot list",
+    "default": "- at {x}, {y}, {z}",
+    "placeholders": [
+      {
+        "key": "x",
+        "description": "The x coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "y",
+        "description": "The y coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "z",
+        "description": "The z coordinate of the plot",
+        "example": "0"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.list.title.trusted",
+    "description": "Title for the trusted plots section of the plot list",
+    "default": "Trusted plots ({amount}):",
+    "placeholders": [
+      {
+        "key": "amount",
+        "description": "The amount of plots the player is trusted on",
+        "example": "5"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.list.plot.trusted",
+    "description": "Message to show a plot in the plot list",
+    "default": "- at {x}, {y}, {z} - {owner}",
+    "placeholders": [
+      {
+        "key": "x",
+        "description": "The x coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "y",
+        "description": "The y coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "z",
+        "description": "The z coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "owner",
+        "description": "The owner of the plot",
+        "example": "Steve"
+      }
+    ]
   }
 ]
