@@ -321,5 +321,174 @@
         "example": "Steve"
       }
     ]
+  },
+  {
+    "key": "plots.message.plot.sell.confirm",
+    "description": "Message that the player tries to sell a plot and must confirm",
+    "default": "Are you sure you want to sell this plot to the server for {price}? Type /plot confirm to confirm. (All your stuff will be removed)",
+    "placeholders": [
+      {
+        "key": "price",
+        "description": "The price of the plot",
+        "example": "$1000"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.sell.succeed",
+    "description": "Message when a player successfully sold a plot",
+    "default": "You have successfully sold this plot to the server for {price}",
+    "placeholders": [
+      {
+        "key": "price",
+        "description": "The price of the plot",
+        "example": "$1000"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.setowner.self",
+    "description": "Message when a player tries to set themselves as the owner of a plot",
+    "default": "You can't set yourself as the owner of your own plot"
+  },
+  {
+    "key": "plots.message.plot.setowner.confirm",
+    "description": "Message that the player tries to set the owner of a plot and must confirm",
+    "default": "Are you sure you want to set the owner of this plot to {player}? Type /plot confirm to confirm",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player to set as the owner of the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.setowner.succeed",
+    "description": "Message when a player successfully set the owner of a plot",
+    "default": "You have successfully set the owner of this plot to {player}",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is the owner of the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.setowner.you",
+    "description": "Message to send to a player when they are set as the owner of a plot",
+    "default": "You have been set as the owner of {owner}'s plot",
+    "placeholders": [
+      {
+        "key": "old-owner",
+        "description": "The old owner of the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.trust.self",
+    "description": "Message when a player tries to trust themselves on a plot",
+    "default": "You can't trust yourself on your own plot"
+  },
+  {
+    "key": "plots.message.plot.trust.already-trusted",
+    "description": "Message when a player tries to trust a player on a plot that they are already trusted on",
+    "default": "{player} is already trusted on this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is trusted on the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.trust.succeed",
+    "description": "Message when a player successfully trusts a player on a plot",
+    "default": "You have trusted {player} on this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is trusted on the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.trust.you",
+    "description": "Message to send to a player when they are trusted on a plot",
+    "default": "You have been trusted on {owner}'s plot at {x}, {y}, {z}",
+    "placeholders": [
+      {
+        "key": "owner",
+        "description": "The owner of the plot",
+        "example": "Steve"
+      },
+      {
+        "key": "x",
+        "description": "The x coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "y",
+        "description": "The y coordinate of the plot",
+        "example": "0"
+      },
+      {
+        "key": "z",
+        "description": "The z coordinate of the plot",
+        "example": "0"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.undeny.not-denied",
+    "description": "Message when a player tries to un-deny a player from a plot that they are not denied from",
+    "default": "{player} is not denied from this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is not denied from the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.undeny.succeed",
+    "description": "Message when a player successfully un-denies a player from a plot",
+    "default": "You have un-denied {player} from this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is un-denied from the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.untrust.not-trusted",
+    "description": "Message when a player tries to un-trust a player from a plot that they are not trusted on",
+    "default": "{player} is not trusted on this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is not trusted on the plot",
+        "example": "Steve"
+      }
+    ]
+  },
+  {
+    "key": "plots.message.plot.untrust.succeed",
+    "description": "Message when a player successfully un-trusts a player from a plot",
+    "default": "You have un-trusted {player} from this plot",
+    "placeholders": [
+      {
+        "key": "player",
+        "description": "The player who is un-trusted from the plot",
+        "example": "Steve"
+      }
+    ]
   }
 ]
