@@ -4,8 +4,4 @@ EternalEmpires is a fantasy MMORPG server in Minecraft that offers a seamless wo
 
 https://youtu.be/ubu1j21ETN4
 
-<p align="center">
-  <a href="#">
-    <img src="https://skillicons.dev/icons?i=mongodb,idea,nuxtjs,tailwind,gradle,gmail,githubactions,git,github,gcp,figma,discord,cloudflare,azure,debian,go,java,kubernetes,postman,prometheus,terraform,grafana" />
-  </a>
-</p>
+![Eternal Empires Banner](https://cdn.eternalempires.net/image/21d63fde-9d3b-4f69-9fed-1fcbade499f2.png)
